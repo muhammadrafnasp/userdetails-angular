@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .card {
+        background-color: rgba(1, 2, 3, 0.1);
+        border: 1px solid #ececec;
+        border-radius: 19px;
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        box-shadow: 0 0 25px #999999;
+        background-color: #f4eeee;
+
+    }
+
+    .text-box h4 {
+        font-size: small;
+        color: rgb(89, 8, 8);
+    }

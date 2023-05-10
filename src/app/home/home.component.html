@@ -1,0 +1,21 @@
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let user of userDetails | filter: searchTerm:'email'">
+                <div class="card">
+                    <!-- user image-->
+                    <img class="card-img-top" src="{{user.avatar}}" alt="..." />
+                    <!-- user details-->
+                    <div class="card-body p-4">
+                        <div class="text-box">
+                            <h4>First name : {{user.first_name}}</h4>
+                            <h4>Last name : {{user.last_name}}</h4>
+                            <h4>Email : {{user.email}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
